@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-ene-2016 23:03:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Hibernate.Alquilado" table="alquilado" catalog="sportcar" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreCliente" type="string">
+            <column name="nombreCliente" length="200" not-null="true" />
+        </property>
+        <property name="apellidoCliente" type="string">
+            <column name="apellidoCliente" length="200" not-null="true" />
+        </property>
+        <property name="cedulaCliente" type="string">
+            <column name="cedulaCliente" length="200" not-null="true" />
+        </property>
+        <property name="fotoCliente" type="string">
+            <column name="fotoCliente" length="200" not-null="true" />
+        </property>
+        <property name="marcaAuto" type="string">
+            <column name="marcaAuto" length="200" not-null="true" />
+        </property>
+        <property name="modeloAuto" type="string">
+            <column name="modeloAuto" length="200" not-null="true" />
+        </property>
+        <property name="codigoAuto" type="string">
+            <column name="codigoAuto" length="200" not-null="true" />
+        </property>
+        <property name="fotoAuto" type="string">
+            <column name="fotoAuto" length="200" not-null="true" />
+        </property>
+        <property name="rentadoDia" type="string">
+            <column name="rentadoDia" length="200" />
+        </property>
+        <property name="paraEntregar" type="string">
+            <column name="paraEntregar" length="200" />
+        </property>
+        <property name="regresadoDia" type="string">
+            <column name="RegresadoDia" length="200" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-ene-2016 23:03:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Hibernate.Autos" table="autos" catalog="sportcar" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="marca" type="string">
+            <column name="marca" length="200" not-null="true" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="200" not-null="true" />
+        </property>
+        <property name="ano" type="string">
+            <column name="ano" length="200" not-null="true" />
+        </property>
+        <property name="codigo" type="string">
+            <column name="codigo" length="200" not-null="true" />
+        </property>
+        <property name="foto1" type="string">
+            <column name="foto1" length="200" not-null="true" />
+        </property>
+        <property name="foto2" type="string">
+            <column name="foto2" length="200" />
+        </property>
+        <property name="foto3" type="string">
+            <column name="foto3" length="200" />
+        </property>
+        <property name="foto4" type="string">
+            <column name="foto4" length="200" />
+        </property>
+        <property name="foto5" type="string">
+            <column name="foto5" length="200" />
+        </property>
+        <property name="estado" type="string">
+            <column name="estado" length="200" not-null="true" />
+        </property>
+        <property name="color" type="string">
+            <column name="color" length="200" not-null="true" />
+        </property>
+        <property name="taza" type="string">
+            <column name="taza" length="200" not-null="true" />
+        </property>
+        <property name="motivo" type="string">
+            <column name="motivo" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>

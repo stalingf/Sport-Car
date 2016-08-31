@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-ene-2016 23:03:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Hibernate.Admin" table="admin" catalog="sportcar" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="Nombre" length="200" not-null="true" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="Apellido" length="200" not-null="true" />
+        </property>
+        <property name="cedula" type="string">
+            <column name="Cedula" length="200" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="200" not-null="true" />
+        </property>
+        <property name="foto" type="string">
+            <column name="Foto" length="200" not-null="true" />
+        </property>
+        <property name="rango" type="string">
+            <column name="rango" length="50" not-null="true" />
+        </property>
+        <property name="clave" type="string">
+            <column name="clave" length="200" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
